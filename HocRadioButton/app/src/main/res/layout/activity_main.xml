@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.itinhand.hocradiobutton.MainActivity"
+    android:weightSum="1">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mời bạn đánh giá hệ thống học của Topica edumal"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#7b7ffc" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rất tuyệt với"
+            android:id="@+id/radRatTuyetVoi"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuyệt với"
+            android:id="@+id/radTuyetVoi"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tạm Chấp Nhận"
+            android:id="@+id/radTamChapNhan"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Không tốt lắm"
+            android:id="@+id/radKhongTotLam"
+            android:checked="false" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:text="Bình chọn"
+        android:id="@+id/btnBinhChon"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.10" />
+
+</LinearLayout>
